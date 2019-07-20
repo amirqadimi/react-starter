@@ -1,4 +1,5 @@
 node_modules/
+assets/fonts/
 public/
 npm-debug.log
 docs/
