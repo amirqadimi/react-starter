@@ -1,0 +1,9 @@
+node_modules/
+public/
+npm-debug.log
+docs/
+.DS_Store
+.env
+.htaccess
+.git-ftp-ignore
+.git-ftp-include

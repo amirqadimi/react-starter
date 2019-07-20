@@ -1,0 +1,14 @@
+@import "../library/library";
+
+.icon{
+	display: inline-block;
+	overflow: hidden;
+	width: rem(50);
+	height: rem(50);
+	
+
+	&--instagram{
+		width: rem(25);
+		height: rem(25);
+	}
+}

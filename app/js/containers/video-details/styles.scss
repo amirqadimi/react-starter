@@ -1,0 +1,23 @@
+@import "../../../scss/library/library";
+
+.video{
+  position: relative;
+
+  iframe{
+    position: relative;
+    width: 100%;
+    background: rgba(color(gray_c),.3);
+    min-height: 300px;
+    border: 0;
+    z-index: 2;
+  }
+
+  &Init{
+    height: 300px;
+    background: color(gray_c);
+  }
+}
+.loading{
+  @include centered(true,true);
+}
+

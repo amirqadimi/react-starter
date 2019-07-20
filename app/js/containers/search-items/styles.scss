@@ -1,0 +1,11 @@
+@import "../../../scss/library/library";
+
+.list{
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: auto;
+
+  @include mq_max($md){
+    max-height: none;
+  }
+}

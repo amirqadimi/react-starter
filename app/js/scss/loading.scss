@@ -1,0 +1,39 @@
+@import "../../scss/library/library";
+
+.loading{
+  opacity: 1;
+  transition: all 0.3s;
+
+  &::after{
+    content:"";
+    display: block;
+    width: rem(50);
+    height: rem(50);
+    border-radius: 50%;
+    border: rem(6) solid rgba(#fff, 0.2);
+    border-top-color: #fff;
+    animation: spin-cw 1s infinite linear;
+  }
+}
+.red{
+  @extend .loading;
+
+  &::after{
+    border-color: rgba(color(red), 0.2);
+    border-top-color: color(red);
+  }
+}
+.xs{
+  @extend .loading;
+
+  &::after{
+    width: rem(28);
+    height: rem(28);
+    border-width: rem(3);
+  }
+}
+
+@keyframes spin-cw{
+  from{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  to{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}

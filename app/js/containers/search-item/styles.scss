@@ -1,0 +1,44 @@
+@import "../../../scss/library/library";
+
+.item{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #cacaca;
+  border-radius: 3px;
+  padding: 15px;
+  cursor: pointer;
+
+  &:hover{
+    background: #f7f7f7;
+  }
+
+  &Img{
+    position: relative;
+    flex: none;
+    width:100px;
+    height: 100px;
+    margin-left: 15px;
+
+    img{
+      position: absolute;
+      left: 0;
+      top:0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &Inner{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

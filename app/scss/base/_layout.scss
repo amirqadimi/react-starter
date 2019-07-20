@@ -1,0 +1,12 @@
+@import "../library/library";
+
+.section{
+  &--intro{
+    padding-top: rem(50);
+  }
+  &-wrap {
+    padding:0 15px;
+    max-width: width(md);
+    margin: 0 auto;
+  }
+}
